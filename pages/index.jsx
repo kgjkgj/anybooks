@@ -1,29 +1,33 @@
-import Meta from '../Meta/Home'
-import classes from './Home.module.scss'
+import Link from 'next/link'
+import Blog from '../Dependent/ContainerHome/Blog/Home'
+import GoodBooks from '../Dependent/ContainerHome/GoodBooks/Home'
+import Library from '../Dependent/ContainerHome/Library/Home'
+import Quote from '../Dependent/ContainerHome/Quote/Home'
+import ReviewBooks from '../Dependent/ContainerHome/ReviewBooks/Main/Home'
 import SideReviewBooks from '../Dependent/ContainerHome/ReviewBooks/Random/Home'
 import TopReviewsBooks from '../Dependent/ContainerHome/ReviewBooks/TopViews/Home'
-import GoodBooks from '../Dependent/ContainerHome/GoodBooks/Home'
-import ReviewBooks from '../Dependent/ContainerHome/ReviewBooks/Main/Home'
 import Work from '../Dependent/ContainerHome/Work/Home'
-import Library from '../Dependent/ContainerHome/Library/Home'
-import Blog from '../Dependent/ContainerHome/Blog/Home'
-import Quote from '../Dependent/ContainerHome/Quote/Home'
-import Link from 'next/link'
-import Scroll from '../Tools/Scroll/Scroll'
 import SideBar from '../Dependent/SideBar/Home'
-
-
-import {RandomReviewBooks,TopViewsReviewBooks} from '../Tools/API/ReviewBooks/APIReviewBooks'
-import {TopViewsGoodBooks} from '../Tools/API/GoodBook/APIGoodBook'
-import {topViewsWork} from '../Tools/API/Work/APIWork'
-import {TopViewsLibrary} from '../Tools/API/Library/APILibrary'
-import {TopViewQuote} from '../Tools/API/Quote/APIQuote'
-import {TopViewBlog} from '../Tools/API/Blog/APIBlog'
-
+import Meta from '../Meta/Home'
+import { TopViewBlog } from '../Tools/API/Blog/APIBlog'
+import { TopViewsGoodBooks } from '../Tools/API/GoodBook/APIGoodBook'
+import { TopViewsLibrary } from '../Tools/API/Library/APILibrary'
+import { TopViewQuote } from '../Tools/API/Quote/APIQuote'
+import { RandomReviewBooks, TopViewsReviewBooks } from '../Tools/API/ReviewBooks/APIReviewBooks'
+import { topViewsWork } from '../Tools/API/Work/APIWork'
+import Scroll from '../Tools/Scroll/Scroll'
+import classes from './Home.module.scss'
+import {NotificationsMain} from '../Tools/Swal/Swal'
+import { useEffect } from 'react'
 
 
 export default function Home({dataRandomReviewsBooks,dataTopViewsReviewsBooks
   ,dataTopViewGoodBooks,dataTopViewsWorks,dataTopViewsLibrary,dataTopViewsBlog,dataTopViewsQuote}) {
+
+    useEffect(()=>{
+      NotificationsMain();
+    },[])
+
   return (
     <div className={classes.container}>
 
@@ -72,7 +76,6 @@ export default function Home({dataRandomReviewsBooks,dataTopViewsReviewsBooks
                       <Link href = {'/introductions'}>Tìm hiểu thêm về Anybooks.vn</Link>
                   </p>
       </div>
-
     </div>
   )
 }

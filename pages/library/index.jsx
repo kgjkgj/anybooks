@@ -14,8 +14,6 @@ function Library({data,lengthLibrary}) {
         {url:'/library',title: 'Thư Viện'},
     ]
 
-   
-
     const idioms = `Thư viện sách và cuộc sống - Kho tàng tri thức AnyBooks.vn, Những mẩu truyện ngắn, những cuốn truyện hay, thư viện ebook miễn phí, những dòng tản văn hay ý nghĩa, danh ngôn bất hủ, văn học dân gian,...`
 
     return (
@@ -31,8 +29,6 @@ function Library({data,lengthLibrary}) {
         </div>
     )
 }
-
-
 export async function getServerSideProps(context){
 
     const page = Number(context.query._page);
@@ -50,8 +46,6 @@ export async function getServerSideProps(context){
             lengthLibrary,
         }
     }
-
-
 } 
 
 export default Library

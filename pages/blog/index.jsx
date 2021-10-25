@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Meta from '../../Meta/Home'
 import APIBlog,{Length} from '../../Tools/API/Blog/APIBlog'
 import Breadcrumb from '../../Tools/Breadcrumb/Home'
@@ -36,7 +36,9 @@ function Blog({data,lengthBlog}) {
 }
 
 export async function getServerSideProps(context){
+
     const data = await APIBlog(Number(context.query._page));
+
     const lengthBlog = await Length();
     if (!data) {
         return {
@@ -50,14 +52,6 @@ export async function getServerSideProps(context){
         }
     }
 }
-export async function getPathProps(){
-    const data = await APIBlog();
-    const path = data.map((data)=> ({params:{slug:data.slug}}) )
-
-
-}
-
-
 
 
 export default Blog

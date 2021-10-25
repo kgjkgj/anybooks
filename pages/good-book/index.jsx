@@ -1,11 +1,10 @@
-import React,{useEffect} from 'react'
+import React from 'react'
+import Pagination from '../../Dependent/Pagination/Home'
+import Wrap from '../../Dependent/Wrap/Home'
 import Meta from '../../Meta/Home'
+import APIGoodBook, { Length } from '../../Tools/API/GoodBook/APIGoodBook'
 import Breadcrumb from '../../Tools/Breadcrumb/Home'
 import classes from './good_books.module.scss'
-import APIGoodBook,{Length} from '../../Tools/API/GoodBook/APIGoodBook'
-import Wrap from '../../Dependent/Wrap/Home'
-import Pagination from '../../Dependent/Pagination/Home'
-import {useRouter} from 'next/router'
 
 
 function GoodBook({data,dataLength}) {

@@ -29,6 +29,8 @@ function Hone() {
         setStateSearch([]);
     },[show])
 
+    
+
 
     async function HandleSearch(e){
         const data =  await Search(e.target.value)
