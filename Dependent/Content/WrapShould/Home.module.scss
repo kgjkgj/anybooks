@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+.should_books{
+    margin-top:20px;
+    .wrap_box{
+        display: grid;
+        grid-template-columns: 32% 32% 32%;
+        grid-gap:20px ;
+        .wrap_item{
+            img{
+                width:100%;
+                height:200px;
+            }
+            img:hover{
+                cursor:pointer;
+                opacity: 0.8;
+            }
+            .name{
+                font-weight: bold;
+                font-family: 'Roboto Slab', serif;
+                margin-bottom:0px;
+                font-size:15px;
+                color:#00635d;
+                a:hover{
+                    color:#00635d;
+                    border-bottom:1px solid #00635d;
+                }
+            }
+            .description{
+                font-weight: 500;
+                font-family: 'Roboto Slab', serif;
+                font-size: 13px;
+                text-align: justify;
+                a{
+                    color:#ff0000;
+                    font-weight:bold;
+                }
+            }
+        }
+    }
+}
+@media (max-width:700px) {
+    .should_books{
+        .wrap_box{
+            .wrap_item{
+                img{
+                    width:100%;
+                    height:150px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:500px) {
+    .should_books{
+        .wrap_box{
+            display: grid;
+            grid-template-columns: 48% 48%;
+            grid-gap:15px ;
+        }
+    }
+}

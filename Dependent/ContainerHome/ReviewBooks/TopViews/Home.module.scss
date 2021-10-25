@@ -1,0 +1,53 @@
+.top_views{
+    .top_views_first{
+        position: relative;
+        img{
+            width: 100%;
+        }
+        img:hover{
+            cursor: pointer;
+        }
+        .name{
+            font-weight: bold;
+            font-family: 'Roboto Slab', serif;
+            position:absolute;
+            bottom:0;
+            margin-bottom: 0px;
+            background: rgba(0,0,0,0.6);
+            color:#fff;
+            font-size:13px;
+            padding:5px;
+            text-align:justify;
+            a:hover{
+                color:#ff0000;
+            }
+        }
+    }
+    .group_item{
+        background-color:rgb(0 ,165, 223);
+        .title{
+            padding:10px;
+            margin-bottom: 0px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color:#fff;
+        }
+        .item{
+            padding: 10px;
+            p{
+                margin-bottom: 0px;
+                font-family: 'Roboto Slab', serif;
+                color:#fff;
+                font-size: 12px;
+                font-weight: bold;
+                a:hover{
+                    color:#ff0000;
+                }
+            }
+        }
+    }
+}
+@media (max-width:991px) {
+    .top_views{
+        display: none;
+    }
+}

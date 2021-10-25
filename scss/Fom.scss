@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+.Login{
+    .title{
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Roboto Slab', serif;
+    }
+    form{
+        .form-control:focus{
+            box-shadow: unset;
+        }
+        .form-label{
+            font-family: 'Roboto Slab', serif;
+            font-size:13px;
+            font-weight: bold;
+        }
+        input[type="text"]{
+        font-family: 'Roboto Slab', serif;
+        }
+        .btn{
+        border:1px solid #000;
+        }
+        .btn:hover{
+        background-color:#ff0000;
+        color:#fff;
+        font-family: 'Roboto Slab', serif;
+        border:unset;
+        }
+        span{
+            font-size:12px;
+        }
+          
+    }
+}
+.forms{
+    margin-bottom: 20px;
+    form{
+        p{
+            font-size:12px;
+            font-weight: bold;
+            font-family: 'Roboto Slab', serif;
+        }
+        .form-control:focus{
+            box-shadow: unset;
+        }
+        .form-label{
+            font-family: 'Roboto Slab', serif;
+            font-size:13px;
+            font-weight: bold;
+        }
+        input[type="text"]{
+            font-family: 'Roboto Slab', serif;
+            font-weight: bold;
+            font-size:12px;
+        }
+        textarea{
+            font-family: 'Roboto Slab', serif;
+            font-size:13px;
+            font-weight: bold;
+        }
+        .btn{
+            border:1px solid #000;
+            font-weight: bold;
+            font-family: 'Roboto Slab', serif;
+        }
+        .btn:hover{
+            background-color:#ff0000;
+            color:#fff;
+            font-family: 'Roboto Slab', serif;
+            border:unset;
+        }
+        span{
+            font-size:12px;
+        }
+        .ck-editor__editable:not(.ck-editor__nested-editable) { 
+            min-height: 400px;
+        }
+        img{
+            margin-top: 10px !important;
+            border-radius:5px;
+        }
+    }
+    
+}

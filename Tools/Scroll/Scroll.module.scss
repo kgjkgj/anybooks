@@ -1,0 +1,28 @@
+.scroll{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 10000;
+    p{
+        width:45px;
+        height:45px;
+        border:1px solid black;
+        border: 1px solid #e31d7e;
+        border-radius: 2px;
+        i{
+            display: flex;
+            justify-content:center;
+            align-items:center;
+            color:#e31d7e;
+            height:100%;
+            
+        }
+    }
+    p:hover{
+        background-color:#e31d7e;
+        cursor: pointer;
+        i{
+            color:#fff;
+        }
+    }
+}

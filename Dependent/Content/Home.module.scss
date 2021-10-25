@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.content{
+    display: grid;
+    grid-template-columns: 70% 28%;
+    grid-gap:25px ;
+    margin-top: 20px;
+    .left{
+        .name{
+            font-size: 18px;
+            color: #025ab6;
+            margin-bottom: 20px;
+            font-weight: bold;
+            font-family: 'Roboto Slab', serif;
+        }
+        .contents{
+            text-align:justify;
+            figure{
+                text-align:center;
+                img{
+                    max-width: 500px;
+                }
+            }
+            p{
+                line-height:30px;
+                font-size:16px;
+                font-weight:bold;
+                font-family: 'Roboto', sans-serif;
+                text-align: justify;
+                a{
+                    display: none;
+                }
+                i{
+                    display: block;
+                    text-align: center;
+                }
+            }
+            ul,ol{
+                line-height:50px;
+                font-weight:bold;
+                font-family: 'Roboto', sans-serif;
+            }
+        }
+        .notify{
+            text-align:justify;
+            font-weight:500;
+            font-size:12px;
+            font-family: "Roboto Slab", serif;
+            span{
+                font-weight: bold;
+            }
+            p{
+                a{
+                    color:#025ab6;
+                    border-bottom: 1px solid #025ab6;
+                    font-weight: bold;
+                }
+            }
+        }
+        .same_books{
+            .title{
+                background: #bf1e2e;
+                color: white;
+                font-family: 'Roboto Slab', serif;
+                font-size: 14px;
+                text-transform: uppercase;
+                line-height: 26px;
+                padding: 3px 20px 3px 20px;
+                border-radius: 3px;
+                font-weight: bold;
+                margin-bottom:5px;
+                display: -webkit-inline-box;
+            }
+        }
+        .should_books{
+            margin-top: 20px;
+            .title{
+                background: #bf1e2e;
+                color: white;
+                font-family: 'Roboto Slab', serif;
+                font-size: 14px;
+                text-transform: uppercase;
+                line-height: 26px;
+                padding: 3px 20px 3px 20px;
+                border-radius: 3px;
+                font-weight: bold;
+                margin-bottom:5px;
+                display: -webkit-inline-box;
+            }
+        }
+        .comment{
+            p{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    }
+    .right{
+        width:100%;
+    }
+}
+@media (max-width:991px) {
+    .content{
+        display: grid;
+        grid-template-columns: 100%;
+        .right{
+            display:none;
+        }
+    }
+}
+@media (max-width:600px) {
+    .contents{
+        text-align:justify;
+        figure{
+            text-align:center;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

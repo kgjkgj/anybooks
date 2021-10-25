@@ -1,0 +1,20 @@
+.breadcrumb{
+    margin-top:20px;
+    margin-bottom: 20px;
+    a{
+        font-size:13px;
+        font-weight:bold;
+        font-family: 'Roboto Slab', serif;
+        margin-bottom: 5px;
+        margin-left: 5px;
+        i{
+            margin-right:6px;
+        }
+    }
+    a:hover{
+        color:#ff0000;
+    }
+    .active_link{
+        color:#767667;
+    }
+}

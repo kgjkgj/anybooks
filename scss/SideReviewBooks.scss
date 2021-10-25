@@ -1,0 +1,73 @@
+.slide{
+    .swiper {
+        width: 100%;
+        height: 100%;
+      }
+      .swiper-slide {
+        background-size: cover;
+        background-position: center;
+        .group{
+          position: relative;
+          height: 330px;
+          img{
+            display: block;
+            width: 100%;
+            height: 100%;
+            image-rendering: auto;
+            border-radius:5px;
+          }
+          img:hover{
+            cursor: pointer;
+          }
+          .name{
+            font-family: 'Roboto Slab', serif;
+            text-align: left;
+            font-weight: normal;
+            border-radius:0px 0px 5px 5px;
+            font-size: 16px;
+            font-weight: 700;
+            background: rgba(0,0,0,0.6);
+            color: white;
+            z-index: 9;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width:100%;
+            padding: 10px;
+            margin-bottom: 0px;
+            font-size: 14px;
+            a:hover{
+              color:#ff0000;
+            }
+          }
+        }
+        .description{
+          font-weight: bold;
+          font-family: 'Roboto Slab', serif;
+          font-size:12px;
+          margin-top: 20px;
+          margin-bottom:20px;
+        }
+      }
+      .mySwiper2 {
+        width: 100%;
+      }
+      
+      .mySwiper {
+       
+        box-sizing: border-box;
+        padding: 10px 0;
+      }
+      
+      .mySwiper .swiper-slide {
+        width: 25%;
+        height: 100%;
+        opacity: 0.4;
+      }
+      
+      .mySwiper .swiper-slide-thumb-active {
+        opacity: 1;
+      }
+}
+  
+  

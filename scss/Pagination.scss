@@ -1,0 +1,36 @@
+.pagination_s{
+    .pagination{
+        justify-content:center;
+        .page-item{
+            margin-right: 10px;
+            .page-link{
+                background-color:#ccc;
+                border-radius:50%;
+                width:30px;
+                height:30px;
+                display: flex;
+                justify-content:center;
+                align-items:center;
+                a{
+                    color:#000;
+                    font-weight: bold;
+                    font-family: 'Roboto Slab', serif;
+                    font-size: 15px;
+                }
+                a:hover{
+                    color:#fff;
+                }
+                span{
+                    color:#000;
+                }
+            }
+            .page-link:focus{
+                box-shadow: unset;
+            }
+        }
+        .page-item.active .page-link{
+            background-color:#ff0000;
+            border:unset;
+        }
+    }
+}
